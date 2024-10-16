@@ -24,7 +24,5 @@ jobs:
 
     - name: Build
       run: |
-        npm install
-        npx webpack
         npm install -g selenium-side-runner
         selenium-side-runner ragaziana.side
