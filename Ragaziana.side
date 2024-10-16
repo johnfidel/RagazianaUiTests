@@ -1,0 +1,348 @@
+{
+  "id": "90218c11-4703-4cbd-b328-2840486a9d3b",
+  "version": "2.0",
+  "name": "Ragaziana",
+  "url": "https://sucixedu.cyon.site",
+  "tests": [{
+    "id": "cfdb8349-0712-45f6-a21e-530c65b42721",
+    "name": "FilterOneFile",
+    "commands": [{
+      "id": "4744b5fa-1c25-4de7-9436-2f6cec6ec2f9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ebecbc6-e3c2-452f-8108-a2246e172ef7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1036",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "845de48c-7784-445d-9034-f528463c22ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bibliothek",
+      "targets": [
+        ["linkText=Bibliothek", "linkText"],
+        ["css=#menu-item-419 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bibliothek')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-419']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sucixedu.cyon.site/bibliothek/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bibliothek')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c2add0f-b453-4718-bfc2-2ffbb7936126",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=mehr Infos",
+      "targets": [
+        ["linkText=mehr Infos", "linkText"],
+        ["css=.wpb_column:nth-child(1) .linkmitpfeil", "css:finder"],
+        ["xpath=//a[contains(text(),'mehr Infos')]", "xpath:link"],
+        ["xpath=//article[@id='post-409']/div/div/div[3]/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sucixedu.cyon.site/bibliothek/dokumente/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'mehr Infos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d1ede1d-210f-4f65-9503-32df352a5004",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Übrige Dokumente",
+      "targets": [
+        ["linkText=Übrige Dokumente", "linkText"],
+        ["css=.directory:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Übrige Dokumente')]", "xpath:link"],
+        ["xpath=//article[@id='post-9']/div/div/div/div/div/div/div/div/div[2]/div/div/div/ul/li/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Übrige Dokumente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5c770ba-15a9-4b9e-a06f-da5665fde939",
+      "comment": "",
+      "command": "click",
+      "target": "css=.categories-filtering-overlay",
+      "targets": [
+        ["css=.categories-filtering-overlay", "css:finder"],
+        ["xpath=//div[@id='Search_container']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b464bc24-e543-4b78-8863-4512b03a2f1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cate-item:nth-child(8) > label",
+      "targets": [
+        ["css=.cate-item:nth-child(8) > label", "css:finder"],
+        ["xpath=//ul[@id='cate-list']/li[8]/label", "xpath:idRelative"],
+        ["xpath=//li[8]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Übrige Dokumente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f596f021-c531-4fdf-b984-c9847fee3732",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtfilename",
+      "targets": [
+        ["id=txtfilename", "id"],
+        ["name=q", "name"],
+        ["css=#txtfilename", "css:finder"],
+        ["xpath=//input[@id='txtfilename']", "xpath:attributes"],
+        ["xpath=//div[@id='Search_container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44ac17c0-e5da-4094-99ed-8613aeff5d77",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtfilename",
+      "targets": [
+        ["id=txtfilename", "id"],
+        ["name=q", "name"],
+        ["css=#txtfilename", "css:finder"],
+        ["xpath=//input[@id='txtfilename']", "xpath:attributes"],
+        ["xpath=//div[@id='Search_container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pizolgletscher"
+    }, {
+      "id": "fefd88cf-74a5-421e-9c07-e1c2929e4937",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=txtfilename",
+      "targets": [
+        ["id=txtfilename", "id"],
+        ["name=q", "name"],
+        ["css=#txtfilename", "css:finder"],
+        ["xpath=//input[@id='txtfilename']", "xpath:attributes"],
+        ["xpath=//div[@id='Search_container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ec693873-66d1-4215-993c-d2c31893c956",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=file-886",
+      "targets": [
+        ["id=file-886", "id"],
+        ["linkText=Abschlussarbeit Pizolgletscher", "linkText"],
+        ["css=#file-886", "css:finder"],
+        ["xpath=//a[contains(text(),'Abschlussarbeit Pizolgletscher')]", "xpath:link"],
+        ["xpath=//a[@id='file-886']", "xpath:attributes"],
+        ["xpath=//div[@id='wpfd-results']/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[15]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Abschlussarbeit Pizolgletscher')]", "xpath:innerText"]
+      ],
+      "value": "Abschlussarbeit Pizolgletscher"
+    }]
+  }, {
+    "id": "f82ac220-a29a-4124-b6a5-5e2df4308a50",
+    "name": "FilterMultipleFilesShowOnly5PerPage",
+    "commands": [{
+      "id": "b4ab9996-4bfa-47d2-896f-d111ba81b002",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "907a4ba3-1b26-48ba-a0f6-d275b7f50e75",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1036",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5261b825-22fd-4208-9e47-a2cdfdfb44af",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bibliothek",
+      "targets": [
+        ["linkText=Bibliothek", "linkText"],
+        ["css=#menu-item-419 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bibliothek')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-419']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sucixedu.cyon.site/bibliothek/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bibliothek')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45c5e2ae-6491-43e1-a004-f6cd14e5a5d3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=mehr Infos",
+      "targets": [
+        ["linkText=mehr Infos", "linkText"],
+        ["css=.wpb_column:nth-child(1) .linkmitpfeil", "css:finder"],
+        ["xpath=//a[contains(text(),'mehr Infos')]", "xpath:link"],
+        ["xpath=//article[@id='post-409']/div/div/div[3]/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sucixedu.cyon.site/bibliothek/dokumente/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'mehr Infos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "775c45b8-88c4-43cf-9de3-9fb575d81967",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtfilename",
+      "targets": [
+        ["id=txtfilename", "id"],
+        ["name=q", "name"],
+        ["css=#txtfilename", "css:finder"],
+        ["xpath=//input[@id='txtfilename']", "xpath:attributes"],
+        ["xpath=//div[@id='Search_container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e127051f-62eb-40b5-873b-a205d0d901cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtfilename",
+      "targets": [
+        ["id=txtfilename", "id"],
+        ["name=q", "name"],
+        ["css=#txtfilename", "css:finder"],
+        ["xpath=//input[@id='txtfilename']", "xpath:attributes"],
+        ["xpath=//div[@id='Search_container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "inhalt"
+    }, {
+      "id": "1772c6cf-2bf0-4143-bd96-49f31947dec2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=txtfilename",
+      "targets": [
+        ["id=txtfilename", "id"],
+        ["name=q", "name"],
+        ["css=#txtfilename", "css:finder"],
+        ["xpath=//input[@id='txtfilename']", "xpath:attributes"],
+        ["xpath=//div[@id='Search_container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7058c940-e9a2-41f8-9597-a0d5b7f4fc8b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=file-541",
+      "targets": [
+        ["id=file-541", "id"],
+        ["linkText=Inhaltverzeichnis Fremdenblatt 1882-1968", "linkText"],
+        ["css=#file-541", "css:finder"],
+        ["xpath=//a[contains(text(),'Inhaltverzeichnis Fremdenblatt 1882-1968')]", "xpath:link"],
+        ["xpath=//a[@id='file-541']", "xpath:attributes"],
+        ["xpath=//div[@id='wpfd-results']/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[14]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Inhaltverzeichnis Fremdenblatt 1882-1968')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e10807a-9cfa-4b96-9e79-d1b12ecc3bf6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=file-542",
+      "targets": [
+        ["id=file-542", "id"],
+        ["linkText=Inhaltsverzeichnis Terra plana, 1970-2023", "linkText"],
+        ["css=#file-542", "css:finder"],
+        ["xpath=//a[contains(text(),'Inhaltsverzeichnis Terra plana, 1970-2023')]", "xpath:link"],
+        ["xpath=//a[@id='file-542']", "xpath:attributes"],
+        ["xpath=//div[@id='wpfd-results']/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[16]", "xpath:href"],
+        ["xpath=//tr[2]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Inhaltsverzeichnis Terra plana, 1970-2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79a29c96-1340-4aa4-9700-3207badb5f22",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=file-848",
+      "targets": [
+        ["id=file-848", "id"],
+        ["linkText=Der Bau der Seilbahnen ins Pizolgebiet (RA 060)", "linkText"],
+        ["css=#file-848", "css:finder"],
+        ["xpath=//a[contains(text(),'Der Bau der Seilbahnen ins Pizolgebiet (RA 060)')]", "xpath:link"],
+        ["xpath=//a[@id='file-848']", "xpath:attributes"],
+        ["xpath=//div[@id='wpfd-results']/table/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[18]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Der Bau der Seilbahnen ins Pizolgebiet (RA 060)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c50c2c25-1381-4a7f-875e-015034cd36c1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=file-872",
+      "targets": [
+        ["id=file-872", "id"],
+        ["linkText=Modularbeit U1_St. Anna Kapelle", "linkText"],
+        ["css=#file-872", "css:finder"],
+        ["xpath=//a[contains(text(),'Modularbeit U1_St. Anna Kapelle')]", "xpath:link"],
+        ["xpath=//a[@id='file-872']", "xpath:attributes"],
+        ["xpath=//div[@id='wpfd-results']/table/tbody/tr[4]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[20]", "xpath:href"],
+        ["xpath=//tr[4]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Modularbeit U1_St. Anna Kapelle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d82f38d-1ce5-4f1c-9f50-3a6e9373fbe4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=file-886",
+      "targets": [
+        ["id=file-886", "id"],
+        ["linkText=Abschlussarbeit Pizolgletscher", "linkText"],
+        ["css=#file-886", "css:finder"],
+        ["xpath=//a[contains(text(),'Abschlussarbeit Pizolgletscher')]", "xpath:link"],
+        ["xpath=//a[@id='file-886']", "xpath:attributes"],
+        ["xpath=//div[@id='wpfd-results']/table/tbody/tr[5]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[22]", "xpath:href"],
+        ["xpath=//tr[5]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Abschlussarbeit Pizolgletscher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2e2b6a95-134d-4a52-9451-6840ddd68cce",
+    "name": "Pictures",
+    "commands": [{
+      "id": "9dd0b6b2-9404-4002-b26a-53be237265e5",
+      "comment": "",
+      "command": "open",
+      "target": "/bilder-videos/",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "86291378-323d-409d-9296-b32066de5c4f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://sucixedu.cyon.site/"],
+  "plugins": []
+}
