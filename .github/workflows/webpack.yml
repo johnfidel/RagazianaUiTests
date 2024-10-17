@@ -7,22 +7,22 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  uitest:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        browser: [firefox, chrome, edge]
 
     steps:
     - uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Webbrowser ${{ matrix.browser }}
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 20.x
 
     - name: Build
       run: |
         npm install -g selenium-side-runner
-        selenium-side-runner -c "browserName=firefox" Ragaziana.side
+        selenium-side-runner -c "browserName=${{ matrix.browser}}" Ragaziana.side
